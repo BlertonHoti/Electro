@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Bootstrap -->
+        <link type="text/css" rel="stylesheet" href="../style/bootstrap.min.css"/>
+    
+        <!-- Slick -->
+        <link type="text/css" rel="stylesheet" href="../style/slick.css"/>
+        <link type="text/css" rel="stylesheet" href="../style/slick-theme.css"/>
+    
+        <!-- nouislider -->
+        <link rel="stylesheet" href="../style/nouislider.min.css">
+    
+        <!-- Costum Stylesheet -->
+        <link rel="stylesheet" href="../style/css.css">
+        
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Top-Header -->
+        <div id="top-header">
+            <div class="container">
+                <ul class="header-links pull-left">
+                    <li><a href=""><i class="fas fa-phone"></i>+xxx-xx-xxx-xxx</a></li>
+                    <li><a href=""><i class="fas fa-envelope-square"></i>email@email.com</a></li>
+                </ul>
+                <ul class="header-links pull-right">
+                    <li><a href=""><i class="fas fa-dollar-sign"></i>USD</a></li>
+                    <li><a href=""><i class="fas fa-user"></i>My Account</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /Top Header -->
+
+        
+
+        <!-- Main Header -->
+        <div id="header">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo -->
+                    <div class="col-md-3">
+                        <div class="header-logo">
+                            <a href="#" class="Logo"><img src="../logo/logo.png" alt="Logo Electro." width="150" height="70"></a>
+                        </div>
+                    </div>
+                    <!-- /Logo -->
+
+                    <!--Search Bar-->
+                    <div class="col-md-6">
+                        <div class="header-search">
+                            <form>
+                                <input class="input" placeholder="Search here">
+                                <button class="search-btn">Search</button>
+                            </form>
+                        </div>
+                    </div> 
+                    <!-- /Search Bar -->
+                    
+                    <!-- Account -->
+                    <div class="col-md-3 clearfix">
+                        <div class="header-ctn">
+
+                            <!-- Wishlist -->
+                            <div>
+                                <a href="#">
+                                    <i class="fas fa-heart"></i>
+                                    <span>Your Wishlist</span>
+                                    <div class="qty">0</div>
+                                </a>
+                            </div>
+                            <!-- /Wishlist -->
+
+                            <!-- Cart -->
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                <i class="fas fa-cart-arrow-down"></i>
+                                <span>Your Cart</span>
+                                <div class="qty">0</div>
+                                </a>
+                                <div class="cart-dropdown">
+                                    <div class="cart-list">
+                                        <div class="product-widget">
+                                            <div class="product-img">
+                                                <img src="img/blank.jpg" alt="" width="250" height="250">
+                                            </div>
+                                            <div class="product-body">
+                                                <h3 class="product-name"><a href="#">Product Name</a></h3>
+                                                <h4 class="product-price"><span class="qty">1x</span>$000.00</h4>
+                                            </div>
+                                            <button class="delete"><i class="close"></i></button>
+                                        </div>
+
+                                        <div class="product-widget">
+                                            <div class="product-img">
+                                                <img src="img/blank.jpg" alt="" width="250" height="250">
+                                            </div>
+                                            <div class="product-body">
+                                                <h3 class="product-name"><a href="#">Product Name</a></h3>
+                                                <h4 class="product-price"><span class="qty">1x</span>$000.00</h4>
+                                            </div>
+                                            <button class="delete"><i class="close"></i></button>
+                                        </div>                                        
+                                    </div>
+
+                                    <div class="cart-summary">
+                                        <small>3 Item(s) selected</small>
+                                        <h5>Subtotal: $0000.00</h5>
+                                    </div>
+                                    <div class="cart-btns">
+                                        <a href="productpage.html">View Cart</a>
+                                        <a href="#">Checkout <i class="arrow-circle-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Cart -->
+
+                            <!-- Menu Toogle -->
+                            <div class="menu-toggle">
+                                <a href="#">
+                                    <i class="bars"></i>
+                                    <span>Menu</span>
+                                </a>
+                            </div>
+                            <!-- /Menu Toogle -->
+                        </div>
+                    </div>
+                    <!-- /Account -->
+                </div>
+                <!-- /row -->    
+            </div>
+            <!-- container -->
+        </div>
+        <!-- /Main Header -->    
+    </header>
+    <!-- /Header -->
+
+        <!-- Navigation -->
+        <nav class="navigation">
+            <!-- container -->
+            <div class="container">
+                <!-- responsive-nav -->
+                <div class="responsive-nav">
+                    <!-- Nav -->
+                    <ul class="main-nav nav navbar-nav">
+                        <li class="active"><a href="../index.html">Home</a></li>
+                        <li><a href="../Store.html">Store/Shop</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                    <!-- /Nav -->
+                </div>
+                <!-- /responsive-nav -->
+            </div>
+            <!-- /container -->
+        </nav>
+        <!-- /Navigation -->
+
+        <!-- Section -->
+        <div class="section">
+            <!-- CONTAINER -->
+            <div class="container">
+                <!-- Row -->
+                <div class="row">
+                    <div class="col-md-7">
+                        <!-- Billing Details -->
+                        <div class="billing-details">
+                            <div class="section-title">
+                                <h3 class="title">Billing address</h3>
+                            </div>
+                            <div class="from-group">
+                                <input type="text" name="first-name" placeholder="First Name" class="input">
+                            </div>
+                            <div class="from-group">
+                                <input type="text" name="last-name" placeholder="Last Name" class="input">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="address" placeholder="Email" class="input">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="address" placeholder="address" class="input">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="city" placeholder="city" class="input">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="country" placeholder="Country" class="input">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="zip-code" placeholder="ZIP Code" class="input">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" name="tel" placeholder="telephone" class="input">
+                            </div>
+
+                        </div>
+                        <!-- /Billing Details -->
+
+                        <!-- Shiping Details -->
+                        <div class="shiping-details">
+                            <div class="section-title">
+                                <h3 class="title">Shiping address</h3>
+                            </div>
+                            <div class="input-checkbox">
+                                <input type="checkbox" id="shiping-address">
+                                <label for="shiping-address">
+                                    <span></span>
+                                    Ship to a different address?
+                                </label>
+                                <div class="caption">
+                                    <div class="form-group">
+                                        <input type="text" name="first-name" placeholder="First Name" class="input">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="last-name" placeholder="Last Name" class="input">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" name="email" placeholder="Email" class="input">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="address" placeholder="address" class="input">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="city" placeholder="city" class="input">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="country" placeholder="country" class="input">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="zip-code" placeholder="ZIP Code" class="input">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" name="tel" placeholder="Telephone" class="input">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Shiping details -->
+
+                        <!-- Order notes -->
+                        <div class="order-notes">
+                            <textarea class="input" placeholder="Order Notes"></textarea>
+                        </div>
+                        <!-- /Order notes -->
+                    </div>
+                    <!-- Order Detalis -->
+                    <div class="col-md-5 order-details">
+                        <div class="section-title text-center">
+                            <h3 class="title">Your Order</h3>
+                        </div>
+                        <div class="order-summary">
+                            <div class="order-col">
+                                <div></strong>Product</strong></div>
+                                <div><strong>TOTAL</strong></div>
+                            </div>
+                            <div class="order-products">
+                                <div class="order-col">
+                                    <div>1x Product name</div>
+                                    <div>$000.00</div>
+                                </div>
+                                <div class="order-col">
+                                    <div>2x Product Name Goes Here</div>
+                                    <div>$000.00</div>
+                                </div>
+                            </div>
+                            <div class="order-col">
+                                <div>Shiping</div>
+                                <div><strong>FREE</strong></div>
+                            </div>
+                            <div class="order-col">
+                                <div><strong>TOTAL</strong></div>
+                                <div>
+                                    <strong class="order-total">$0000.00</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment-method">
+                            <div class="input-radio">
+                                <input type="radio" name="payment" id="payment-1">
+                                <label for="payment-1">
+                                <span></span>
+                                Direct Bank Transfer
+                            </label>
+                            <div class="caption">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores atque consequatur autem ad mollitia!</p>
+                            </div>
+                            </div>
+                            <div class="input-radio">
+                                <input type="radio" name="payment" id="payment-2">
+                                <label for="payment-2">
+                                    <span></span>
+                                    Cheque Payment
+                                </label>
+                                <div class="caption">
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum sed fugiat iusto obcaecati explicabo.</p>
+                                </div>
+                            </div>
+                            <div class="input-radio">
+                                <input type="radio" name="payment" id="payment-3">
+                                <label for="payment-3">
+                                    <span></span>
+                                    Paypal System
+                                </label>
+                                <div class="caption">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus ex quaerat rem ad consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-checkbox">
+                            <input type="checkbox" id="terms">
+                            <label for="terms">
+                                <span></span>
+                                I'v read and accept the <a href="#">terms & conditions</a>
+                            </label>
+                        </div>
+                        <a href="#" class="primary-btn order-submit">Place order</a>
+                    </div>
+                    <!-- /order detalis -->
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /section -->
+
+
+    <!-- Newsletter -->
+    <div id="newsletter" class="section">
+        <!-- Container -->
+        <div class="container">
+            <!-- Row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="newsletter">
+                        <p>Sign up for the <strong>NEWSLETTER</strong></p>
+                        <form>
+                            <input type="email" class="input" placeholder="Please Enter Your Email">
+                            <button class="newsletter-btn"><i class="envelope"></i>Subscribe</button>
+                        </form>
+                        <ul class="newsletter-follow">
+                            <li>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>                        
+                    </div>
+                </div>
+            </div>
+            <!-- /Row -->
+        </div>
+        <!-- /Container -->
+    </div>
+    <!-- /Newsletter -->
+
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <!-- Top Footer -->
+        <div class="section">
+            <!-- Container -->
+            <div class="container">
+                <!-- Row -->
+                <div class="row">
+                    <div class="col-md-3 col-xs-6">
+                        <div class="footer">
+                            <h3 class="footer-title">AboutUs</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eligendi eius odit quod quisquam rerum corrupti.</p>
+                            <ul>
+                                <li><a href="#"><i class="fas fa-location-arrow"></i> Numbr Street</a></li>
+                                <li><a href="#"><i class="fas fa-phone"></i> +xxx-xx-xxx-xxx</a></li>
+                                <li><a href="#"><i class="fas fa-envelope-square"></i> email@email.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="footer">
+                            <h3 class="footer-title">Categories</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">Smartphones</a></li>
+                                <li><a href="#">Laptop</a></li>
+                                <li><a href="#">Cameras</a></li>
+                                <li><a href="#">Accessories</a></li>
+                        </div>
+                    </div>
+
+                    <div class="clearfix-visible-xs"></div>
+
+                    <div class="col-md-3 col-xs-6">
+                        <div class="footer">
+                            <h3 class="footer-title">Categories</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">AboutUs</a></li>
+                                <li><a href="#">ContactUs</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-xs-6">
+                        <div class="footer">
+                            <h3 class="footer-title">Categories</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">View Cart</a></li>
+                                <li><a href="#">Wishlist</a></li>
+                                <li><a href="#">Help</a></li>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Row -->
+            </div>
+            <!-- /Container -->
+        </div>
+        <!-- /Top Footer -->
+
+        <!-- Bottom Footer-->
+        <div id="bottom-footer" class="section">
+            <!-- Container -->
+            <div class="container">
+                <div class="col-md-12 text-center">
+                    <div class="footer-payments">
+                        <ul>
+                            <li><a href="#"><i class="visa"></i></a></li>
+                            <li><a href="#"><i class="credit-card"></i></a></li>
+                            <li><a href="#"><i class="master"></i></a></li>
+                            <li><a href="#"><i class="paypal"></i></a></li>
+                        </ul>
+                        <span class="copyright">
+                            copyright&copy;Octagon-Crew
+                        </span>
+                    </div>
+                </div>
+                <!-- /Row -->
+            </div>
+            <!-- /container -->            
+        </div>
+        <!-- /Bottom Footer -->
+    </footer>
+    <!-- /Footer -->
+
+    <script src="../script/jquery.min.js"></script>
+    <script src="../script/bootstrap.min.js"></script>
+    <script src="../script/slick.min.js"></script>
+    <script src="../script/nouislider.min.js"></script>
+    <script src="../script/jquery.zoom.min.js"></script>
+    <script src="../script/main.js"></script>
+    
+</body>
+</html>

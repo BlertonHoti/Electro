@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductPage</title>
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap -->
+    <link type="text/css" rel="stylesheet" href="../style/bootstrap.min.css"/>
+
+    <!-- Slick -->
+	<link type="text/css" rel="stylesheet" href="../style/slick.css"/>
+	<link type="text/css" rel="stylesheet" href="../style/slick-theme.css"/>
+
+    <!-- nouislider -->
+    <link rel="stylesheet" href="../style/nouislider.min.css">
+
+    <!-- Costum Stylesheet -->
+    <link rel="stylesheet" href="../style/css.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Top-Header -->
+        <div id="top-header">
+            <div class="container">
+                <ul class="header-links pull-left">
+                    <li><a href=""><i class="fas fa-phone"></i>+xxx-xx-xxx-xxx</a></li>
+                    <li><a href=""><i class="fas fa-envelope-square"></i>email@email.com</a></li>
+                </ul>
+                <ul class="header-links pull-right">
+                    <li><a href=""><i class="fas fa-dollar-sign"></i>USD</a></li>
+                    <li><a href=""><i class="fas fa-user"></i>My Account</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- /Top Header -->
+
+        
+
+        <!-- Main Header -->
+        <div id="header">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo -->
+                    <div class="col-md-3">
+                        <div class="header-logo">
+                            <a href="#" class="Logo"><img src="../logo/logo.png" alt="Logo Electro." width="150" height="70"></a>
+                        </div>
+                    </div>
+                    <!-- /Logo -->
+
+                    <!--Search Bar-->
+                    <div class="col-md-6">
+                        <div class="header-search">
+                            <form>
+                                <input class="input" placeholder="Search here">
+                                <button class="search-btn">Search</button>
+                            </form>
+                        </div>
+                    </div> 
+                    <!-- /Search Bar -->
+                    
+                    <!-- Account -->
+                    <div class="col-md-3 clearfix">
+                        <div class="header-ctn">
+
+                            <!-- Wishlist -->
+                            <div>
+                                <a href="#">
+                                    <i class="fas fa-heart"></i>
+                                    <span>Your Wishlist</span>
+                                    <div class="qty">0</div>
+                                </a>
+                            </div>
+                            <!-- /Wishlist -->
+
+                            <!-- Cart -->
+                            <div class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+                                <i class="fas fa-cart-arrow-down"></i>
+                                <span>Your Cart</span>
+                                <div class="qty">0</div>
+                                </a>
+                                <div class="cart-dropdown">
+                                    <div class="cart-list">
+                                        <div class="product-widget">
+                                            <div class="product-img">
+                                                <img src="img/blank.jpg" alt="" width="250" height="250">
+                                            </div>
+                                            <div class="product-body">
+                                                <h3 class="product-name"><a href="#">Product Name</a></h3>
+                                                <h4 class="product-price"><span class="qty">1x</span>$000.00</h4>
+                                            </div>
+                                            <button class="delete"><i class="close"></i></button>
+                                        </div>
+
+                                        <div class="product-widget">
+                                            <div class="product-img">
+                                                <img src="img/blank.jpg" alt="" width="250" height="250">
+                                            </div>
+                                            <div class="product-body">
+                                                <h3 class="product-name"><a href="#">Product Name</a></h3>
+                                                <h4 class="product-price"><span class="qty">1x</span>$000.00</h4>
+                                            </div>
+                                            <button class="delete"><i class="close"></i></button>
+                                        </div>                                        
+                                    </div>
+
+                                    <div class="cart-summary">
+                                        <small>3 Item(s) selected</small>
+                                        <h5>Subtotal: $0000.00</h5>
+                                    </div>
+                                    <div class="cart-btns">
+                                        <a href="#">View Cart</a>
+                                        <a href="checkoutpage.html">Checkout <i class="arrow-circle-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Cart -->
+
+                            <!-- Menu Toogle -->
+                            <div class="menu-toggle">
+                                <a href="#">
+                                    <i class="bars"></i>
+                                    <span>Menu</span>
+                                </a>
+                            </div>
+                            <!-- /Menu Toogle -->
+                        </div>
+                    </div>
+                    <!-- /Account -->
+                </div>
+                <!-- /row -->    
+            </div>
+            <!-- container -->
+        </div>
+        <!-- /Main Header -->    
+    </header>
+    <!-- /Header -->
+
+        <!-- Navigation -->
+        <nav class="navigation">
+            <!-- container -->
+            <div class="container">
+                <!-- responsive-nav -->
+                <div class="responsive-nav">
+                    <!-- Nav -->
+                    <ul class="main-nav nav navbar-nav">
+                        <li class="active"><a href="../index.html">Home</a></li>
+                        <li><a href="../Store.html">Store/Shop</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                    <!-- /Nav -->
+                </div>
+                <!-- /responsive-nav -->
+            </div>
+            <!-- /container -->
+        </nav>
+        <!-- /Navigation -->
+
+        <!-- section -->
+        <div class="section">
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                    <!-- product main img -->
+                    <div class="col-md-5 col-md-push-2">
+                        <div id="product-main-img">
+                            <div class="product-preview">
+                                <img src="../img/blank.jpg" alt="">
+                            </div>
+                            <div class="product-preview">
+                                <img src="../img/blank.jpg" alt="">
+                            </div>
+                            <div class="product-preview">
+                                <img src="../img/blank.jpg" alt="">
+                            </div>
+                            <div class="product-preview">
+                                <img src="../img/blank.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /product main img -->
+
+                    <!-- product thumb imgs -->
+                    <div class="col-md-2 col-md-pull-5">
+                        <div id="product-imgs">
+                            <div class="product-preview">
+                                <img src="../img/blank.jpg" alt="">
+                            </div>
+                            <div class="product-preview">
+                                <img src="../img/blank.jpg" alt="">
+                            </div>
+                            <div class="product-preview">
+                                <img src="../img/blank.jpg" alt="">
+                            </div>
+                            <div class="product-preview">
+                                <img src="../img/blank.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /product thumb imgs -->
+
+                    <!-- Product details -->
+                    <div class="col-md-5">
+                        <div class="product-details">
+                            <h2 class="product-name">Product Name</h2>
+                            <div>
+                                <div class="product-rating">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star-o"></i>
+                                </div>
+                                <a href="#" class="review-link">10 Review(s) | add your review</a>
+                            </div>
+                            <div>
+                                <h3 class="product-price">$000.00 <del class="product-old-price">$000.00</del></h3>
+                                <span class="product-available">In stock</span>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illum reprehenderit inventore quae rerum veritatis, quis quibusdam adipisci vero modi animi ipsam vitae excepturi enim.
+                            </p>
+                            <div class="product-options">
+                                <label>
+                                    Size
+                                    <select class="input-select">
+                                        <option value="0">X</option>
+                                    </select>
+                                </label>
+                                <label>
+                                    color
+                                    <select class="input-select">
+                                        <option value="0">Red</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="add-to-cart">
+                                <div class="qty-label">
+                                    Qty
+                                    <div class="input-number">
+                                        <input type="number">
+                                        <span class="qty-up">+</span>
+                                        <span class="qty-down">-</span>
+                                    </div>
+                                </div>
+                                <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>add to cart</button>
+                            </div>
+                            <ul class="product-btns">
+                                <li><a href="#"><i class="fa fa-heart-o"></i> add to wishlist</a></li>
+                                <li><a href="#"><i class="fa fa-exchange"></i>add to compare</a></li>
+                            </ul>
+                            <ul class="product-links">
+                                <li>Share:</li>
+                                <li><a href="#"><i class="facebook"></i></a></li>
+                                <li><a href="#"><i class="twitter"></i></a></li>
+                                <li><a href="#"><i class="google"></i></a></li>
+                                <li><a href="#"><i class="envelope"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /Product Detalis -->
+
+                    <!-- Product Tab -->
+                    <div class="col-md-12">
+                        <div class="product-tab">
+                            <!-- Product Tab Nav -->
+                            <ul class="tab-nav">
+                                <li class="active"><a data-toggle="tab" href="#tab1">Description</a></li>
+                                <li><a data-toggle="tab" href="#tab2">Detalis</a></li>
+                                <li><a data-toggle="tab" href="#tab3">Reviews</a></li>
+                            </ul>
+                            <!-- /Product tab nav -->
+
+                            <!-- Product tab content -->
+                            <div class="tab-content">
+                                <!-- tab1 -->
+                                <div id="tab1" class="tab-pane fade in active">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum explicabo cumque ad doloribus, ipsam natus?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /tab1 -->
+                                <!-- tab2 -->
+                                <div id="tab2" class="tab-pane fade in">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis rem dicta ab, deleniti sit quam!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /tab2 -->
+                                <!-- tab3 -->
+                                <div id="tab3" class="tab-pane fade in">
+                                    <div class="row">
+                                        <!-- Rating -->
+                                        <div class="col-md-3">
+                                            <div id="rating">
+                                                <div class="rating-avg">
+                                                    <span>4.5</span>
+                                                    <div class="rating-stars">
+                                                        <i class="stars"></i>
+                                                        <i class="stars"></i>
+                                                        <i class="stars"></i>
+                                                        <i class="stars"></i>
+                                                        <i class="stars"></i>
+                                                    </div>
+                                                </div>
+                                                <ul class="rating">
+                                                    <li>
+                                                        <div class="rating-stars">
+                                                            <i class="stars"></i>
+                                                            <i class="stars"></i>
+                                                            <i class="stars"></i>
+                                                            <i class="stars"></i>
+                                                            <i class="stars"></i>
+                                                        </div>
+                                                        <div class="rating-progress">
+                                                            <div style="width: 80%;"></div>
+                                                        </div>
+                                                        <span class="sum">3</span>
+                                                    </li>
+                                                    <li>
+                                                        <div class="rating-stars">
+                                                            <i class="star"></i>
+                                                            <i class="star"></i>
+                                                            <i class="star"></i>
+                                                            <i class="star"></i>
+                                                            <i class="star"></i>
+                                                        </div>
+                                                        <div class="rating-progress">
+                                                            <div style="width: 60%;"></div>
+                                                        </div>
+                                                        <span class="sum">2</span>
+                                                    </li>
+                                                    <li>
+                                                        <div class="rating-stars">
+                                                            <i class="star"></i>
+                                                            <i class="star"></i>
+                                                            <i class="star"></i>
+                                                            <i class="star"></i>
+                                                            <i class="star"></i>
+                                                        </div>
+                                                        <div class="rating-progress">
+                                                            <div></div>
+                                                        </div>
+                                                        <span class="sum">0</span>
+                                                    </li>
+                                                    <li>
+                                                        <div class="rating-stars">
+                                                            <i class="star"></i>
+                                                            <i class="star"></i>
+                                                            <i class="star"></i>
+                                                            <i class="star"></i>
+                                                            <i class="star"></i>
+                                                        </div>
+                                                        <div class="rating-progress">
+                                                            <div></div>
+                                                        </div>
+                                                        <span class="sum">0</span>
+                                                    </li>
+                                                    <li>
+                                                        <div class="rating-stars">
+                                                            <i class="star"></i>
+                                                            <i class="star"></i>
+                                                            <i class="star"></i>
+                                                            <i class="star"></i>
+                                                            <i class="star"></i>
+                                                        </div>
+                                                        <div class="rating-progress">
+                                                            <div></div>
+                                                        </div>
+                                                        <span class="sum">0</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- /Rating -->
+                                        <!-- Reviews -->
+                                        <div class="col-md-6">
+                                            <div id="reviews">
+                                                <ul class="reviews">
+                                                    <li>
+                                                        <div class="review-heading">
+                                                            <h5 class="name">Name</h5>
+                                                            <p class="date">05 Jan 2022, 9:0 PM</p>
+                                                            <div class="review-rating">
+                                                                <i class="star"></i>
+                                                                <i class="star"></i>
+                                                                <i class="star"></i>
+                                                                <i class="star"></i>
+                                                                <i class="star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="review-body">
+                                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, odio? Quod ut perspiciatis laborum.</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="review-heading">
+                                                            <h5 class="name">Name</h5>
+                                                            <p class="date">03 JAN 2022, 9:0 PM</p>
+                                                            <div class="review-rating">
+                                                                <i class="star"></i>
+                                                                <i class="star"></i>
+                                                                <i class="star"></i>
+                                                                <i class="star"></i>
+                                                                <i class="star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="review-body">
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa similique sit a ab quisquam!</p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="review-heading">
+                                                            <h5 class="name">Name</h5>
+                                                            <p class="date">03 JAN 2022, 9:0 PM</p>
+                                                            <div class="review-rating">
+                                                                <i class="star"></i>
+                                                                <i class="star"></i>
+                                                                <i class="star"></i>
+                                                                <i class="star"></i>
+                                                                <i class="star"></i>
+                                                            </div>
+                                                        </div>
+                                                        <div class="review-body">
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa similique sit a ab quisquam!</p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <ul class="reviews-pagination">
+                                                    <li class="active">1</li>
+                                                    <li><a href="#">2</a></li>
+                                                    <li><a href="#">3</a></li>
+                                                    <li><a href="#">4</a></li>
+                                                    <li><a href="#"><i class="angle-right"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- /Reviews -->
+
+                                        <!-- Review Form -->
+                                        <div class="col-md-3">
+                                            <div id="review-form">
+                                                <form class="review-from">
+                                                    <input type="text" placeholder="Your Name" class="input">
+                                                    <input type="email" placeholder="Your Email" class="input">
+                                                    <textarea placeholder="Your Review" class="input"></textarea>
+                                                    <div class="input-rating">
+                                                        <span>Your Rating: </span>
+                                                        <div class="stars">
+                                                            <input type="radio" value="5" name="rating" id="star5"><label for="star5"></label>
+                                                            <input type="radio" value="4" name="rating" id="star4"><label for="star4"></label>
+                                                            <input type="radio" value="3" name="rating" id="star3"><label for="star3"></label>
+                                                            <input type="radio" value="2" name="rating" id="star2"><label for="star2"></label>
+                                                            <input type="radio" name="rating" id="star1" value="1"><label for="star1"></label>
+                                                        </div>
+                                                    </div>
+                                                    <button class="primary-btn">Submit</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <!-- /Review Form -->
+                                    </div>
+                                </div>
+                                <!-- /tab3 -->
+                            </div>
+                            <!-- /product tab content -->
+                        </div>
+                    </div>
+                    <!-- /product tab -->
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /Section -->
+
+        <!-- Section -->
+        <div class="section">
+            <!-- Container -->
+            <div class="container">
+                <!-- Row -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title text-center">
+                            <h3 class="title">Related Product</h3>
+                        </div>
+                    </div>
+
+                    <!-- Product -->
+                    <div class="col-md-3 col-xs-6">
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="../img/blank.jpg" alt="">
+                                <div class="product-label">
+                                    <span class="sale">-00%</span>
+                                </div>
+                            </div>
+                            <div class="product-body">
+                                <p class="product-category">Category</p>
+                                <h3 class="product-name"><a href="#">product name</a></h3>
+                                <h4 class="product-price">$000.00 <del class="product-old-price">$000.00</del></h4>
+                                <div class="product-rating"></div>
+                                <div class="product-btns">
+                                    <button class="add-to-withlist"><i class="fas fa-heart"></i><span class="tooltipp">add to withlist</span></button>
+                                    <button class="add-to-compare"><i class="exchange"></i><span class="tooltip">add to compare</span></button>
+                                    <button class="quick-view"><i class="eye"></i><span class="tooltip">quick view</span></button>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i>add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /product -->
+
+                    <!-- Product -->
+                    <div class="col-md-3 col-xs-6">
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="../img/blank.jpg" alt="">
+                                <div class="product-label">
+                                    <span class="sale">-00%</span>
+                                </div>
+                            </div>
+                            <div class="product-body">
+                                <p class="product-category">Category</p>
+                                <h3 class="product-name"><a href="#">product name</a></h3>
+                                <h4 class="product-price">$000.00 <del class="product-old-price">$000.00</del></h4>
+                                <div class="product-rating"></div>
+                                <div class="product-btns">
+                                    <button class="add-to-withlist"><i class="fas fa-heart"></i><span class="tooltipp">add to withlist</span></button>
+                                    <button class="add-to-compare"><i class="exchange"></i><span class="tooltip">add to compare</span></button>
+                                    <button class="quick-view"><i class="eye"></i><span class="tooltip">quick view</span></button>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i>add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /product -->
+
+                    <div class="clearfix visible-sm visible-xs"></div>
+
+                    <!-- Product -->
+                    <div class="col-md-3 col-xs-6">
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="../img/blank.jpg" alt="">
+                                <div class="product-label">
+                                    <span class="sale">-00%</span>
+                                </div>
+                            </div>
+                            <div class="product-body">
+                                <p class="product-category">Category</p>
+                                <h3 class="product-name"><a href="#">product name</a></h3>
+                                <h4 class="product-price">$000.00 <del class="product-old-price">$000.00</del></h4>
+                                <div class="product-rating"></div>
+                                <div class="product-btns">
+                                    <button class="add-to-withlist"><i class="fas fa-heart"></i><span class="tooltipp">add to withlist</span></button>
+                                    <button class="add-to-compare"><i class="exchange"></i><span class="tooltip">add to compare</span></button>
+                                    <button class="quick-view"><i class="eye"></i><span class="tooltip">quick view</span></button>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i>add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /product -->
+        
+                    <!-- Product -->
+                    <div class="col-md-3 col-xs-6">
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="../img/blank.jpg" alt="">
+                                <div class="product-label">
+                                    <span class="sale">-00%</span>
+                                </div>
+                            </div>
+                            <div class="product-body">
+                                <p class="product-category">Category</p>
+                                <h3 class="product-name"><a href="#">product name</a></h3>
+                                <h4 class="product-price">$000.00 <del class="product-old-price">$000.00</del></h4>
+                                <div class="product-rating"></div>
+                                <div class="product-btns">
+                                    <button class="add-to-withlist"><i class="fas fa-heart"></i><span class="tooltipp">add to withlist</span></button>
+                                    <button class="add-to-compare"><i class="exchange"></i><span class="tooltip">add to compare</span></button>
+                                    <button class="quick-view"><i class="eye"></i><span class="tooltip">quick view</span></button>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i>add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /product -->
+
+                    <!-- Product -->
+                    <div class="col-md-3 col-xs-6">
+                        <div class="product">
+                            <div class="product-img">
+                                <img src="../img/blank.jpg" alt="">
+                                <div class="product-label">
+                                    <span class="sale">-00%</span>
+                                </div>
+                            </div>
+                            <div class="product-body">
+                                <p class="product-category">Category</p>
+                                <h3 class="product-name"><a href="#">product name</a></h3>
+                                <h4 class="product-price">$000.00 <del class="product-old-price">$000.00</del></h4>
+                                <div class="product-rating"></div>
+                                <div class="product-btns">
+                                    <button class="add-to-withlist"><i class="fas fa-heart"></i><span class="tooltipp">add to withlist</span></button>
+                                    <button class="add-to-compare"><i class="exchange"></i><span class="tooltip">add to compare</span></button>
+                                    <button class="quick-view"><i class="eye"></i><span class="tooltip">quick view</span></button>
+                                </div>
+                            </div>
+                            <div class="add-to-cart">
+                                <button class="add-to-cart-btn"><i class="fas fa-shopping-cart"></i>add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /product -->
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /section -->
+
+    <!-- Newsletter -->
+    <div id="newsletter" class="section">
+        <!-- Container -->
+        <div class="container">
+            <!-- Row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="newsletter">
+                        <p>Sign up for the <strong>NEWSLETTER</strong></p>
+                        <form>
+                            <input type="email" class="input" placeholder="Please Enter Your Email">
+                            <button class="newsletter-btn"><i class="envelope"></i>Subscribe</button>
+                        </form>
+                        <ul class="newsletter-follow">
+                            <li>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>                        
+                    </div>
+                </div>
+            </div>
+            <!-- /Row -->
+        </div>
+        <!-- /Container -->
+    </div>
+    <!-- /Newsletter -->
+
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <!-- Top Footer -->
+        <div class="section">
+            <!-- Container -->
+            <div class="container">
+                <!-- Row -->
+                <div class="row">
+                    <div class="col-md-3 col-xs-6">
+                        <div class="footer">
+                            <h3 class="footer-title">AboutUs</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni eligendi eius odit quod quisquam rerum corrupti.</p>
+                            <ul>
+                                <li><a href="#"><i class="fas fa-location-arrow"></i> Numbr Street</a></li>
+                                <li><a href="#"><i class="fas fa-phone"></i> +xxx-xx-xxx-xxx</a></li>
+                                <li><a href="#"><i class="fas fa-envelope-square"></i> email@email.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <div class="footer">
+                            <h3 class="footer-title">Categories</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">Smartphones</a></li>
+                                <li><a href="#">Laptop</a></li>
+                                <li><a href="#">Cameras</a></li>
+                                <li><a href="#">Accessories</a></li>
+                        </div>
+                    </div>
+
+                    <div class="clearfix-visible-xs"></div>
+
+                    <div class="col-md-3 col-xs-6">
+                        <div class="footer">
+                            <h3 class="footer-title">Categories</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">AboutUs</a></li>
+                                <li><a href="#">ContactUs</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-xs-6">
+                        <div class="footer">
+                            <h3 class="footer-title">Categories</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">View Cart</a></li>
+                                <li><a href="#">Wishlist</a></li>
+                                <li><a href="#">Help</a></li>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Row -->
+            </div>
+            <!-- /Container -->
+        </div>
+        <!-- /Top Footer -->
+
+        <!-- Bottom Footer-->
+        <div id="bottom-footer" class="section">
+            <!-- Container -->
+            <div class="container">
+                <div class="col-md-12 text-center">
+                    <div class="footer-payments">
+                        <ul>
+                            <li><a href="#"><i class="visa"></i></a></li>
+                            <li><a href="#"><i class="credit-card"></i></a></li>
+                            <li><a href="#"><i class="master"></i></a></li>
+                            <li><a href="#"><i class="paypal"></i></a></li>
+                        </ul>
+                        <span class="copyright">
+                            copyright&copy;Octagon-Crew
+                        </span>
+                    </div>
+                </div>
+                <!-- /Row -->
+            </div>
+            <!-- /container -->            
+        </div>
+        <!-- /Bottom Footer -->
+    </footer>
+    <!-- /Footer -->
+
+    <script src="../script/jquery.min.js"></script>
+    <script src="../script/bootstrap.min.js"></script>
+    <script src="../script/slick.min.js"></script>
+    <script src="../script/nouislider.min.js"></script>
+    <script src="../script/jquery.zoom.min.js"></script>
+    <script src="../script/main.js"></script>
+</body>
+</html>
